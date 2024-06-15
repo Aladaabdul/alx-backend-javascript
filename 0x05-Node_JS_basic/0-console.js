@@ -2,5 +2,5 @@
 
 
 module.exports = function displayMessage(i) {
-	process.stdout.write(i + '\n');
+	console.log(i);
 };
