@@ -1,7 +1,7 @@
 // 1-calcul.js
 
 
-export function calculateNumber(type, a, b) {
+module.exports = function calculateNumber(type, a, b) {
 
 	const num1 = Math.round(a);
 	const num2 = Math.round(b);

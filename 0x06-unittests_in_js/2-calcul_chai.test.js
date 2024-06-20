@@ -1,8 +1,8 @@
 // 2-calcul_chai.test.js
 
-import { calculateNumber } from "./2-calcul_chai.js";
-import { expect } from "chai"
-
+const calculateNumber = require("./2-calcul_chai.js");
+const chai = require("chai");
+const expect = chai.expect;
 
 describe("mathOps", function() {
 	it("sum of 1.4 and 4.5 should return 6", function() {
