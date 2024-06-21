@@ -1,7 +1,6 @@
 //5-payment.js
 
-//const Utils = require("./utils.js");
-
+const Utils = require("./utils");
 
 module.export = function sendPaymentRequestToApi(totalAmount, totalShipping) {
 
