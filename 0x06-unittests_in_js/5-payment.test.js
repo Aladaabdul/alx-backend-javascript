@@ -23,12 +23,12 @@ describe('hooks', function() {
 	it("calculate sum 100 and 20", function() {
 
 		sendPaymentRequestToAPI(100, 20);
-		expect(spy.calledOnce("The total is: 120")).to.be.true;
+		expect(spy.calledOnceWithExactly("The total is: 120")).to.be.true;
 	});
 
 	it("calculate sum 10 and 10", function() {
 
 		sendPaymentRequestToAPI(10, 10);
-		expect(spy.calledOnce("The total is: 20")).to.be.true;
+		expect(spy.calledOnceWithExactly("The total is: 20")).to.be.true;
 	});
 });
