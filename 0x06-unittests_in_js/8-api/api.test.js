@@ -19,7 +19,7 @@ describe("Api testing...", () => {
 	});
 
 	it("should return 200", (done) => {
-		request.get('http://localhost:7865', (error, response, body) => {
+		request.get('http://localhost:7865/', (error, response, body) => {
 			if (error) return done(error);
 			expect(response.statusCode).to.equal(200);
 			expect(body).to.equal("Welcome to the payment system");
